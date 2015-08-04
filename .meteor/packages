@@ -38,3 +38,9 @@ telescope:update-prompt
 ############ Your Custom Packages ############
 
 # custom
+
+flemay:less-autoprefixer
+semantic:ui
+biolog:custom-landing
+biolog:custom-telescope
+

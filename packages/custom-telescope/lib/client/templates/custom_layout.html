@@ -1,0 +1,13 @@
+<template name="custom_layout">
+    {{> nav}}
+    <div class="outer-wrapper ui main  container {{currentPage}} {{navLayout}}">
+        {{> mobile_nav}}
+        <div class="inner-wrapper template-{{pageName}}">
+            <div class="content-wrapper">
+                {{> messages}} {{> modules "hero"}} {{> yield "adminMenu"}} {{> yield "postsListTop"}} {{> yield}} {{> footer}}
+            </div>
+            <div class="overlay hidden"></div>
+        </div>
+        {{{extraCode}}}
+    </div>
+</template>

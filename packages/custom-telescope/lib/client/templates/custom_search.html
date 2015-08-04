@@ -1,0 +1,10 @@
+<template name="custom_search">
+    {{#if canSearch}}
+    <div class="item">
+        <div class=" ui icon input search {{searchQueryEmpty}} header-submodule">
+            <input id="search" type="search" class="" placeholder="{{_ 'search'}} ..." value="{{searchQuery}}">
+            <i class=" search link icon"></i>
+        </div>
+    </div>
+    {{/if}}
+</template>

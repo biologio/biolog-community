@@ -1,0 +1,10 @@
+<template name="custom_logo">
+    {{#if logoUrl}}
+    <a href="{{pathFor 'community'}}" class="header item">
+        <img src="{{logoUrl}}" alt="{{getSetting " title " "Telescope "}}"/>
+    </a>
+    {{else}}
+    <a href="{{pathFor 'community'}}" class="header item">
+        <i class="icon doctor "></i> {{getSetting "title" "Telescope"}}</a>
+    {{/if}}
+</template>

@@ -1,0 +1,17 @@
+<template name="custom_nav">
+    <header class=" {{headerClass}} ui  menu fixed">
+        <div class="menu">
+            <a href="#menu" class="mobile-only mobile-menu-button button item">
+      {{{icon "menu"}}}
+    </a> {{> logo}} {{#if hasPrimaryNav}}
+            <div class="nav primary-nav desktop-nav header-module desktop-only item">
+                {{> modules "primaryNav"}}
+            </div>
+            {{/if}} {{#if hasSecondaryNav}}
+            <div class="nav secondary-nav desktop-nav header-module desktop-only  right menu">
+                {{> modules "secondaryNav"}}
+            </div>
+            {{/if}}
+        </div>
+    </header>
+</template>
