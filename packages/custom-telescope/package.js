@@ -29,30 +29,36 @@ Package.onUse(function (api) {
   // client
 
   api.addFiles([
-    'lib/client/templates/custom_layout.html',
-    'lib/client/templates/custom_logo.html',
-    'lib/client/templates/custom_menuComponent.html',
-    'lib/client/templates/custom_menuItem.html',
-    'lib/client/templates/custom_nav.html',
-    'lib/client/templates/custom_notifications_menu.html',
-    'lib/client/templates/custom_pages_menu.html',
-    'lib/client/templates/custom_post_author.html',
-    'lib/client/templates/custom_post_content.html',
-    'lib/client/templates/custom_post_info.html',
-    'lib/client/templates/custom_post_item.html',
-    'lib/client/templates/custom_post_thumbnail.html',
-    'lib/client/templates/custom_posts_list.html',
-    'lib/client/templates/custom_search.html',
-    'lib/client/templates/custom_submit_button.html',
-    'lib/client/templates/custom_user_menu.html',
-    'lib/client/templates/custom_menuComponent.js'
+    'client/templates/custom_layout.html',
+    'client/templates/custom_logo.html',
+    // 'client/templates/custom_menuComponent.html',
+    // 'client/templates/custom_menuItem.html',
+    'client/templates/custom_header.html',
+    'client/js/custom_header.js',
+    // 'client/templates/custom_notifications_menu.html',
+    // 'client/templates/custom_pages_menu.html',
+    // 'client/templates/custom_post_author.html',
+    // 'client/templates/custom_post_content.html',
+    // 'client/templates/custom_post_info.html',
+    // 'client/templates/custom_post_item.html',
+    // 'client/templates/custom_post_thumbnail.html',
+    // 'client/templates/custom_posts_list.html',
+    'client/templates/custom_search.html',
+    'client/templates/categories.html',
+     'client/templates/custom_loading.html',
+    'client/js/categories.js',
+    // 'client/templates/custom_submit_button.html',
+    // 'client/templates/custom_user_menu.html',
+    'client/js/custom_menuComponent.js',
+    'client/stylesheets/scss/screen.scss',
+    'client/stylesheets/custom.scss'
 
   ], ['client']);
 
   // server
 
   api.addFiles([
-    'lib/server/templates/custom_emailPostItem.handlebars'
+    'server/templates/custom_emailPostItem.handlebars'
   ], ['server']);
 
   // i18n languages (must come last)

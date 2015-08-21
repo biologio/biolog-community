@@ -1,7 +1,7 @@
 Package.describe({
     name: "biolog:custom-landing",
     summary: "Landing page with app features",
-    version: "0.0.1"
+    version: "0.1.0"
 
 });
 

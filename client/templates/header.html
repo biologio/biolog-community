@@ -1,0 +1,146 @@
+<head>
+</head>
+<template name="poll">
+    <div class="row">
+        <div class="col s12 m12">
+            {{#if isNewPoll}}
+            <button id="" class="btn right back">Back to Poll <i class="icon chevron right"></i></button>
+            {{else}}
+            <button id="create" class="btn">Create Poll</button>
+            {{/if}}
+        </div>
+    </div>
+    <div class="row">
+        {{#if isNewPoll}} {{> pollCreate}} {{else}}
+        <div class="vote-list">
+            {{#each pollList}}
+            <div class="col s12 m6 vote-item">
+                <div class="card hoverable ">
+                    <div class="card-title z-depth-0">{{question}}</div>
+                    <div class="card-content">
+                        <ul class="collection">
+                            {{#each indexedArray choices }} {{ > options }} {{/each}}
+                        </ul>
+                        <div class="card-action right-align">
+                            <a href="#" id="vote" class="btn "> Vote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+    </div>
+</template>
+<template name="options">
+    <li class="collection-item">
+        <div>
+            <input class="with-gap" data-choice="{{text}}" name="rdo-{{../_id}}" type="radio" id="group-{{_index}}{{../_id}}" />
+            <label for="group-{{_index}}{{../_id}}">{{text}}</label><a href="#!" class="secondary-content badge">  {{votes}} <i class="material-icons icon user"></i></a></div>
+    </li>
+</template>
+<template name="pollCreate">
+    <div class="create">
+        <div class="card">
+            <div class="card-title center-align z-depth-0">
+                <div class="  ">Create Poll data</div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <form class="col s12" id="creatPoll">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="question" type="text" required class="validate question">
+                                <label for="question" data-error="wrong" data-success="right">Question</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="option1" type="text" required class="validate option">
+                                <label for="option1" data-error="wrong" data-success="right">Option 1</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="option2" type="text" required class="validate option">
+                                <label for="option2" data-error="wrong" data-success="right">Option 2</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="option3" type="text" required class="validate option">
+                                <label for="option3" data-error="wrong" data-success="right">Option 3</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="option4" type="text" required class="validate option">
+                                <label for="option4" data-error="wrong" data-success="right">Option 4</label>
+                            </div>
+                        </div>
+                        <input id="datepicker" placeholder="Polling Closing Date" type="date" class="datepicker">
+                        <div class="card-action right-align">
+                            <button type="submit" class="waves-effect btn waves-light  teal vote" value="">Create Poll</button>
+                            <button class="waves-effect waves-light btn teal moreOption"> add more Options</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="pollLayout">
+    <div class="material">
+        
+  
+    <nav class=" lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+            <ul class="right hide-on-med-and-down">
+               
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="section">
+            {{> yield}}
+        </div>
+    </div>
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+      </div>
+</template>

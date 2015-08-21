@@ -1,0 +1,185 @@
+// ------------------------------------ post ------------------------------------ //
+.laval-post {
+    transition: all .12s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9 !important;
+        .discuss-link {
+            opacity: 0.8;
+            right: 14px;
+            bottom: 4px;
+            .icon {
+                font-size: 27px;
+            }
+            .action-count {
+              font-size: 18px;
+            }
+        }
+    }
+    .post {
+        margin: 30px auto 30px;
+        max-width: 730px;
+        width: 83.3333333%;
+        text-align: center;
+        transition: all .12s ease;
+    }
+    @include medium-large {
+       &:hover {
+           padding-left: 11px;
+       }
+       .post {
+           margin: 30px auto 30px;
+       }
+    }
+}
+.post-list-title, .page-title{
+    display: none;
+}
+.single-post {
+    .posts-list {
+        margin-bottom: 30px;
+    }
+    .laval-post {
+        margin-top: 10px;
+        background: transparent !important;
+        .post {
+            margin: 40px auto 0px;
+        }
+        &:hover {
+            padding-left: 0px;
+        }
+        .post-title {
+            color: #444;
+            &:visited {
+                color: #444;
+            }
+        }
+        .discuss-link {
+            display:none;
+        }
+        .post-body, .page-body {
+            color: #444;
+        }
+        .post-meta {
+            color: #444;
+            a:link, a:visited, a:active {
+                color: #444;
+            }
+            a:hover {
+                color: #444;
+            }
+        }
+    }
+    .laval-link {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        transform: scale(1.4);
+    }
+}
+.laval-link {
+    display: none;
+}
+
+// ------------------------------------ posts views nav ------------------------------------ //
+.posts-list-views{
+    display: none;
+}
+
+// ------------------------------ posts-list layout ------------------------------ //
+.posts-list {
+    .post-upvote {
+        display: none;
+    }
+}
+.template-posts_list_controller {
+    .content-wrapper {
+      max-width: none;
+      padding: 0px;
+    }
+}
+
+// -------------------------------- post content --------------------------------- //
+.post-heading {
+    margin-bottom: 0px;
+    .post-title {
+        transition: all .12s ease;
+        display: block;
+        font-weight: 800;
+        line-height: 1.2;
+        font-size: 31px;
+        color: white;
+        text-transform: uppercase;
+        &:visited {
+            color: white;
+        }
+        @include medium-large {
+            font-size: 45px;
+            line-height: 1.1;
+        }
+    }
+}
+.post-body, .page-body {
+    transition: all .12s ease;
+    font-size: 17px;
+    line-height: 1.1;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0px;
+    p {
+        line-height: 1.5;
+    }
+    @include medium-large {
+        font-size: 23px;
+        p {
+            line-height: 1.6;
+        }
+    }
+}
+.post-meta {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    a:link, a:visited, a:active {
+        color: rgba(255, 255, 255, 0.9);
+    }
+    a:hover {
+        color: rgba(255, 255, 255, 0.9);
+    }
+    .discuss-link {
+        transition: all .12s ease;
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        color:white;
+        opacity: 0.3;
+        @media screen and (min-width: 38em) {
+          display: block;
+        }
+        .icon {
+            font-size: 25px;
+        }
+        .action-count {
+          font-size: 16px;
+        }
+    }
+}
+
+// ----------------------------------- other ------------------------------------ //
+.more-button {
+    margin-top: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+    background: white;
+    font-size: 20px;
+    height: 50px;
+    line-height: 46px;
+    &:hover {
+        background: white;
+    }
+    &:after {
+        font-size: 16px;
+        content: " »";
+    }
+}

@@ -101,14 +101,14 @@ Template.landing.rendered = function() {
             //         break;
             // }
 
-            if (index == '2') {
-                console.log('on leaving the slideshow/section1');
-                clearInterval(slideTimeout);
-            } else {
-                slideTimeout = setInterval(function() {
-                    $.fn.fullpage.moveSlideRight();
-                }, 6000);
-            }
+            // if (index == '2') {
+            //     console.log('on leaving the slideshow/section1');
+            //     clearInterval(slideTimeout);
+            // } else {
+            //     slideTimeout = setInterval(function() {
+            //         $.fn.fullpage.moveSlideRight();
+            //     }, 6000);
+            // }
         }
     });
 
@@ -172,30 +172,3 @@ function clearInput(input) {
     input.value = '';
     console.log('cleared');
 }
-Template.nav.rendered = function() {
-    console.log(this.data);
-
-    $('.ui.menu .ui.dropdown').dropdown({
-        on: 'hover'
-    });
-    $('.ui.menu a.item')
-        .on('click', function() {
-            $(this)
-                .addClass('active')
-                .siblings()
-                .removeClass('active');
-        });
-
-
-};
-Telescope.modules.remove("primaryNav", "search");
-Telescope.modules.add("secondaryNav", {
-    template: 'search',
-    order: 1
-});
-Template.menuComponent.helpers({
-
-    getTemplateName: function() {
-        return this.template.name;
-    }
-});

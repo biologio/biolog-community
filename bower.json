@@ -1,0 +1,23 @@
+{
+  "name": "Biolog",
+  "version": "0.0.0",
+  "authors": [
+    "Rashid Ahmad <decent10cs@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.4",
+    "gold-elements": "PolymerElements/gold-elements#~1.0.1",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0"
+  }
+}

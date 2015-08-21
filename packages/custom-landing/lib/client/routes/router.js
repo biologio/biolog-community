@@ -7,6 +7,7 @@ Object.defineProperty(Meteor, 'blogURL', {
 
 
 Meteor.startup(function() {
+
     var arrDeleteRoute = [];
     arrDeleteRoute.push('posts_default');
     arrDeleteRoute.push('posts_top');
@@ -15,12 +16,16 @@ Meteor.startup(function() {
     arrDeleteRoute.push('posts_pending');
     arrDeleteRoute.push('posts_scheduled');
     arrDeleteRoute.push('posts_day');
-    arrDeleteRoute.push('posts_daily');
-    arrDeleteRoute.push('pages');
+    arrDeleteRoute.push('posts_category');
+    arrDeleteRoute.push('search');
+     arrDeleteRoute.push('page');
+    // arrDeleteRoute.push('pages');
+
+
     var isRemoved = Meteor.removeRouteByName(arrDeleteRoute);
     //  Meteor.removeRouteByName('posts_top');
     // Meteor.removeRouteByName('posts_new');
-console.log(isRemoved);
+    console.log(isRemoved);
     // Meteor.removeRouteByName('posts_best');
     // Meteor.removeRouteByName('posts_pending');
     // Meteor.removeRouteByName('posts_scheduled');
@@ -29,6 +34,7 @@ console.log(isRemoved);
     // Meteor.removeRouteByName('pages');
 
     console.log(isRemoved[0])
+
     var landingTemplate = new Template('landing', function() {
         return Template.landing;
 
@@ -71,14 +77,31 @@ console.log(isRemoved);
         name: 'posts_day',
         controller: Posts.controllers.day
     });
+    Router.route(Meteor.blogURL + '/category/:slug/:limit?', {
+        name: 'posts_category',
+        controller: Posts.controllers.category,
+    });
     Router.route(Meteor.blogURL + '/daily/:limit?', {
         name: 'posts_daily',
         controller: Posts.controllers.daily
     });
-    Router.route(Meteor.blogURL + '/pages', {
-        name: 'pages',
-        controller: Telescope.controllers.admin
+    // Router.route(Meteor.blogURL + '/pages', {
+    //     name: 'pages',
+    //     controller: Telescope.controllers.admin
+    // });
+    Router.route(Meteor.blogURL + '/search/:limit?', {
+        name: 'search',
+        controller: Posts.controllers.search
     });
+    Router.route(Meteor.blogURL + '/page/:slug', {
+        name: 'page',
+        
+    });
+
+    // Router.route(Meteor.blogURL + '/search/:limit?', {
+    //     name: 'search',
+    //     controller: Posts.controllers.search
+    // });
 
 
 

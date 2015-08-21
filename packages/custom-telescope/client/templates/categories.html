@@ -1,0 +1,43 @@
+<template name="biologCategories">
+    {{#if showCategories}}
+    <div class="categories">
+        
+    <div class="ui link four doubling stackable cards">
+        
+        {{#each categories}}
+        <div class="card">
+            <div class="image">
+                <img src="{{image}}">
+            </div>
+            <div class="content">
+                <a href ="/category/{{slug}}" class="header category">{{name}}</a>
+
+                <div class="meta">
+              {{#each subCategories}}
+                
+                   
+                    <a href="/category/{{slug}}" class="ui mini blue label">{{name}}</a>
+              {{/each}}
+                </div>
+                <div class="description">
+                    {{description}}
+                </div>
+            </div>
+            <div class="extra content">
+                <span class="right floated">
+        <!-- Joined in 2013 -->
+      </span>
+      
+
+                <span>
+        <i class="align justify icon"></i>
+        {{post}} Posts
+      </span>
+            </div>
+        </div>
+        {{/each}}
+    
+    </div>
+</div>
+    {{/if}}
+</template>

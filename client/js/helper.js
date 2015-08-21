@@ -24,5 +24,11 @@ else{
 
     return arr; 
 }
+Router.route("/poll", {
+  name: 'poll',
+  template:'poll',
+  layoutTemplate: 'pollLayout'
+})
+
 
 

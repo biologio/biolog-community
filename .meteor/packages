@@ -34,6 +34,8 @@ telescope:tags
 telescope:theme-base
 telescope:theme-hubble
 telescope:update-prompt
+telescope:debug
+
 
 ############ Your Custom Packages ############
 
@@ -41,6 +43,18 @@ telescope:update-prompt
 
 flemay:less-autoprefixer
 semantic:ui
-biolog:custom-landing
-biolog:custom-telescope
 
+
+
+
+#biolog:custom-landing
+biolog:custom-telescope
+danappelxx:hover.css
+
+
+
+
+#materialize:materialize
+amr:parsley.js
+
+jeremy:telescope-plugin-hero
