@@ -47,6 +47,7 @@ api.addFiles(['lib/collection.js'],'server');
     'client/templates/custom_search.html',
     'client/templates/categories.html',
      'client/templates/custom_loading.html',
+     'client/templates/custom_footer_code.html',
        'client/templates/custom_post_share.html',
     'client/js/categories.js',
     // 'client/templates/custom_submit_button.html',

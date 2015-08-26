@@ -1,6 +1,0 @@
-<template name="custom_post_info">
-    <div class="post-meta-item" aria-live="off">
-        <span class="ui label circular">{{baseScore}}  
-    {{pointsUnitDisplayText}}</span> {{#if postedAt}}<span class="ui label">{{timeAgo postedAt}}</span>{{/if}} {{#if canEdit this}} | <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link ui label goto-edit">{{_ "edit"}}</a> {{/if}}
-    </div>
-</template>
