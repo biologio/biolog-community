@@ -8,7 +8,8 @@ Package.onUse(function (api) {
 
   // ---------------------------------- 1. Core dependency -----------------------------------
 
-  api.use("telescope:core");
+  api.use(["telescope:core", "jeremy:telescope-plugin-hero"]);
+
 
   // ---------------------------------- 2. Files to include ----------------------------------
 
@@ -19,7 +20,7 @@ Package.onUse(function (api) {
   ], ['client', 'server']);
 
   // client & server
-
+api.addFiles(['lib/collection.js'],'server');
   api.addFiles([
     'lib/custom_fields.js',
     'lib/template_modules.js',
@@ -41,15 +42,17 @@ Package.onUse(function (api) {
     // 'client/templates/custom_post_content.html',
     // 'client/templates/custom_post_info.html',
     // 'client/templates/custom_post_item.html',
-    // 'client/templates/custom_post_thumbnail.html',
+    'client/templates/custom_post_thumbnail.html',
     // 'client/templates/custom_posts_list.html',
     'client/templates/custom_search.html',
     'client/templates/categories.html',
      'client/templates/custom_loading.html',
+       'client/templates/custom_post_share.html',
     'client/js/categories.js',
     // 'client/templates/custom_submit_button.html',
     // 'client/templates/custom_user_menu.html',
     'client/js/custom_menuComponent.js',
+       'client/js/custom_post_submit.js',
     'client/stylesheets/scss/screen.scss',
     'client/stylesheets/custom.scss'
 

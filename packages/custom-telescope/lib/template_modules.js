@@ -9,3 +9,4 @@ Telescope.modules.add("hero", {
     template: "biologCategories",
     order: 2
 });
+//Telescope.modules.remove("top","posts_views_nav");

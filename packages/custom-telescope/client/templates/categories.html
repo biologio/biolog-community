@@ -1,43 +1,41 @@
 <template name="biologCategories">
+    
     {{#if showCategories}}
     <div class="categories">
-        
-    <div class="ui link four doubling stackable cards">
-        
-        {{#each categories}}
-        <div class="card">
-            <div class="image">
-                <img src="{{image}}">
-            </div>
-            <div class="content">
-                <a href ="/category/{{slug}}" class="header category">{{name}}</a>
+        <div class="ui link three doubling stackable cards " id="effect-1">
+            {{#each categories}}
+            <div class="card">
+                <div class="image">
+                    <img src="{{image}}">
+                      <div class="overlay1">
+            <a href="#" class="expand">  {{slogan}}</a>
+            <a class="close-overlay hidden">x</a>
+        </div>
 
-                <div class="meta">
-              {{#each subCategories}}
-                
-                   
-                    <a href="/category/{{slug}}" class="ui mini blue label">{{name}}</a>
-              {{/each}}
                 </div>
-                <div class="description">
-                    {{description}}
+                <div class="content">
+                    <a href="/category/{{slug}}" class="header category">{{name}}</a>
+                    <div class="meta">
+                        {{#each subCategories}}
+                        <a href="/category/{{slug}}" class="ui mini blue label">{{name}}</a> {{/each}}
+                    </div>
+                    <div class="description">
+                        {{description}}
+                    </div>
                 </div>
-            </div>
-            <div class="extra content">
-                <span class="right floated">
+                <div class="extra content">
+                    <span class="right floated">
         <!-- Joined in 2013 -->
       </span>
-      
-
-                <span>
+                    <span>
         <i class="align justify icon"></i>
         {{post}} Posts
       </span>
+                </div>
             </div>
+            {{/each}}
         </div>
-        {{/each}}
-    
     </div>
-</div>
     {{/if}}
 </template>
+

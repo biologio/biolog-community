@@ -12,13 +12,13 @@
   <div class="logo header-module">
     {{#if logoUrl}}
       
-        <a href="{{pathFor 'community'}}" class=" item logo-image ">
+        <a href="/" class=" item logo-image ">
           <img src="{{logoUrl}}" alt="{{getSetting "title" "Telescope"}}"/>
         </a>
      
     {{else}}
     
-      <a href="{{pathFor 'community'}}" class=" item logo-text">{{getSetting "title" "Telescope"}}</a>
+      <a href="/" class=" item logo-text">{{getSetting "title" "Telescope"}}</a>
     {{/if}}
   </div>
 </template>

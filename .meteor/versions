@@ -1,5 +1,6 @@
 accounts-base@1.2.0
 accounts-facebook@1.0.4
+accounts-google@1.0.4
 accounts-oauth@1.1.5
 accounts-password@1.1.1
 accounts-twitter@1.0.4
@@ -32,6 +33,7 @@ chuangbo:marked@0.3.5
 cmather:handlebars-server@2.0.0
 coffeescript@1.0.6
 cosmos:browserify@0.4.0
+cwaring:modernizr@3.0.0_1
 danappelxx:hover.css@1.0.0
 dburles:collection-helpers@1.0.3
 ddp@1.1.0
@@ -45,6 +47,7 @@ flemay:less-autoprefixer@1.1.0
 fortawesome:fontawesome@4.3.0
 fourseven:scss@3.2.0
 geojson-utils@1.0.3
+google@1.1.5
 handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
