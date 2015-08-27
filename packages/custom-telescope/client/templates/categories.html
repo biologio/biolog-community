@@ -1,5 +1,4 @@
 <template name="biologCategories">
-    
     {{#if showCategories}}
     <div class="categories">
         <div class="ui link three doubling stackable cards " id="effect-1">
@@ -7,11 +6,10 @@
             <div class="card">
                 <div class="image">
                     <img src="{{image}}">
-                      <div class="overlay1">
-            <a href="#" class="expand">  {{slogan}}</a>
-            <a class="close-overlay hidden">x</a>
-        </div>
-
+                    <div class="overlay1">
+                        <a href="#" class="expand">  {{slogan}}</a>
+                        <a class="close-overlay hidden">x</a>
+                    </div>
                 </div>
                 <div class="content">
                     <a href="/category/{{slug}}" class="header category">{{name}}</a>
@@ -38,4 +36,3 @@
     </div>
     {{/if}}
 </template>
-

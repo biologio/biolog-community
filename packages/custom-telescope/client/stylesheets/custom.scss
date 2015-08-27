@@ -334,7 +334,7 @@ border:none;
     color: black;
 }
 .post-heading .post-title:visited {
-     color: #bbbbbb; 
+     color: #000; 
 }
 .posts-list .post-discuss {
 
@@ -555,4 +555,24 @@ padding:10px;
     .blue {
     background-color: #5F7BE5 !important;
 }
+}
+.footer-copyright{
+  .icon{
+  font-size:2.3rem;
+  }
+}
+.text-justify{
+  text-align:justify;
+}
+.footer-heading{
+  
+      padding-bottom: 20px;
+      border-bottom: solid 2px #879AE2;
+      margin-bottom: 10px !important;
+}
+.post-avatars .avatar, .user-menu .avatar {
+   
+    height: 32px;
+    width: 32px;
+  
 }
