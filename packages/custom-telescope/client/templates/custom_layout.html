@@ -1,16 +1,20 @@
-
-
-
-<!-- <template name="custom_layout">
-    {{> header}}
-    <div class="outer-wrapper ui main  container {{currentPage}} {{navLayout}}">
-        {{> mobile_nav}}
-        <div class="inner-wrapper template-{{pageName}}">
-            <div class="content-wrapper">
-                {{> messages}} {{> modules "hero"}} {{> yield "adminMenu"}} {{> yield "postsListTop"}} {{> yield}} {{> footer_code}}
-            </div>
-            <div class="overlay hidden"></div>
-        </div>
-        {{{extraCode}}}
+<template name="custom_layout">
+  {{> css}}
+  <div class="outer-wrapper {{currentPage}} {{navLayout}}">
+    {{> mobile_nav}}
+    <div class="inner-wrapper template-{{pageName}}">
+      {{> header}}
+      {{> modules zone="hero"}}
+      <div class="content-wrapper">
+        {{> messages}}
+        {{> yield "adminMenu"}}
+        {{> modules zone="top" zoneClass="top"}}
+        {{> yield}}
+        
+      </div>
+      {{> modules zone="footer" zoneClass="footer"}}
+      <div class="overlay hidden"></div>
     </div>
-</template> -->
+    {{{extraCode}}}
+  </div>
+</template>

@@ -15,21 +15,26 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Follow us</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!"><i class="icon big  facebook square "></i></a></li>
+            <li><a class="white-text" href="#!"><i class="icon big google plus square "></i></a></li>
+            <li><a class="white-text" href="https://twitter.com/inventhcare"><i class="icon big twitter square "></i></a></li>
+            
           </ul>
         </div>
+
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+          <h5 class="white-text left-align">Help and Support</h5>
+          <ul class="left-align">
+            <li><a class="white-text" href="#!">FAQ</a></li>
+            <li><a class="white-text" href="/page/terms-conditions">Terms of Use</a></li>
+            <li><a class="white-text" href="#!">About Invent.heathcare</a></li>
+           {{#if currentUser}}
+           {{else}}
+            <li><a class="white-text" href="/register">Register</a></li>
+            <li><a class="white-text" href="/sign-in">Log-in</a></li>
+            {{/if}}
           </ul>
         </div>
       </div>

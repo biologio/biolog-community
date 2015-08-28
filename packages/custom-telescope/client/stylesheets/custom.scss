@@ -10,6 +10,7 @@ body {
         -webkit-font-smoothing: antialiased;
         font-smoothing: antialiased;
         font-weight:normal;
+
 }
 h1, h2, h3, h4, h5{
     font-family:'Raleway', sans-serif !important;
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5{
 }
 .categories .ui.cards .card
 {
-    transition: box-shadow .25s;
+    transition: all .25s;
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .categories .ui.cards > .card:hover{
@@ -324,9 +325,19 @@ border:none;
 .post-vote .upvoted .upvote-link {
     color: #2196F3;
 }
+ .post-share{
+    
+    order:3;
+    color:#48A8F5;
+    transition:all 1s;
+    }
 .post:hover{
     transition:all .5s;
     color:#f7f7fa;
+    .post-share{
+    display:none;
+    
+    }
 }
 .post-heading .post-title {
     font-size: 20px;
@@ -403,6 +414,8 @@ overflow:none;
   font-size: 1.5em;
   font-weight: 300;
 }
+.hero-config + .categories{
+margin-top:10px;}
 .categories{
 margin-top:-40px;}
 .hero .learn-more a {
@@ -575,4 +588,7 @@ padding:10px;
     height: 32px;
     width: 32px;
   
+}
+.footer li{
+  font-size:.8rem;
 }
