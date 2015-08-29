@@ -1,24 +1,10 @@
-<!-- <template name="custom_logo12">
-    {{#if logoUrl}}
-    <a href="{{pathFor 'community'}}" class=" item">
-        <img src="{{logoUrl}}" alt="{{getSetting " title " "Telescope "}}"/>
-    </a>
-    {{else}}
-    <a href="{{pathFor 'community'}}" class=" item">
-        <i class="icon doctor "></i> {{getSetting "title" "Telescope"}}</a>
-    {{/if}}
-</template> -->
 <template name="custom_logo">
-  <div class="logo header-module">
-    {{#if logoUrl}}
-      
+    <div class="logo header-module">
+        {{#if logoUrl}}
         <a href="/" class=" item logo-image ">
-          <img src="{{logoUrl}}" alt="{{getSetting "title" "Telescope"}}"/>
+            <img src="{{logoUrl}}" alt="{{getSetting " title " "Telescope "}}"/>
         </a>
-     
-    {{else}}
-    
-      <a href="/" class=" item logo-text">{{getSetting "title" "Telescope"}}</a>
-    {{/if}}
-  </div>
+        {{else}}
+        <a href="/" class=" item logo-text">{{getSetting "title" "Telescope"}}</a> {{/if}}
+    </div>
 </template>

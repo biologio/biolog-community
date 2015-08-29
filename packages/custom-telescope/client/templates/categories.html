@@ -25,7 +25,7 @@
                     <span class="right floated">
         <!-- Joined in 2013 -->
       </span>
-            <span>
+                    <span>
         <i class="align justify icon"></i>
         {{post}} Posts
       </span>
@@ -36,29 +36,3 @@
     </div>
     {{/if}}
 </template>
-
-<template name="custom_hero">
-  {{#if showHero}}
-    {{#with heroData}}
-    <style type="text/css">
-      {{extraCss}}
-    </style>
-    {{#if currentUser}}
-    {{else}}
-    <section class="hero" style="background-image: url('{{heroImage}}')">
-      <div class="hero-inner">
-        <div class="copy">
-          <h1>{{title}}</h1>
-          <h3>{{subheading}}</h3>
-          {{{extraHtml}}}
-        </div>
-      </div>
-    </section>
-    {{/if}}
-    {{/with}}
-  {{/if}}
-  {{#if isAdmin}}
-    {{> hero_config_overlay}}
-  {{/if}}
-</template>
-

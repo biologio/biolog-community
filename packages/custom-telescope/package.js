@@ -1,17 +1,16 @@
 Package.describe({
-  summary: 'Telescope custom package – use as template for your own packages',
+  summary: 'Telescope custom package – use for customization to Telescope app',
   version: '0.1.0',
   name: 'biolog:custom-telescope'
 });
 
 Package.onUse(function (api) {
 
-  // ---------------------------------- 1. Core dependency -----------------------------------
-
+  
   api.use(["telescope:core", "jeremy:telescope-plugin-hero"]);
 
 
-  // ---------------------------------- 2. Files to include ----------------------------------
+ 
 
   // i18n config (must come first)
 
@@ -32,26 +31,16 @@ api.addFiles(['lib/collection.js'],'server');
   api.addFiles([
     'client/templates/custom_layout.html',
     'client/templates/custom_logo.html',
-    // 'client/templates/custom_menuComponent.html',
-    // 'client/templates/custom_menuItem.html',
     'client/templates/custom_header.html',
     'client/js/custom_header.js',
-    // 'client/templates/custom_notifications_menu.html',
-    // 'client/templates/custom_pages_menu.html',
-    // 'client/templates/custom_post_author.html',
-    // 'client/templates/custom_post_content.html',
-    // 'client/templates/custom_post_info.html',
-    // 'client/templates/custom_post_item.html',
     'client/templates/custom_post_thumbnail.html',
-    // 'client/templates/custom_posts_list.html',
     'client/templates/custom_search.html',
     'client/templates/categories.html',
      'client/templates/custom_loading.html',
+     'client/templates/custom_hero.html',
      'client/templates/custom_footer_code.html',
-       'client/templates/custom_post_share.html',
+      'client/templates/custom_post_share.html',
     'client/js/categories.js',
-    // 'client/templates/custom_submit_button.html',
-    // 'client/templates/custom_user_menu.html',
     'client/js/custom_menuComponent.js',
        'client/js/custom_post_submit.js',
     'client/stylesheets/scss/screen.scss',

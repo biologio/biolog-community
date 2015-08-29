@@ -1,29 +1,24 @@
 <template name="custom_post_thumbnail">
-  {{#if thumbnailUrl}}
+    {{#if thumbnailUrl}}
     <div class="post-thumbnail" aria-hidden="true">
-      <a class="post-thumbnail-link {{playVideoClass}}" href="{{this.getLink}}" target="{{this.getLinkTarget}}">
-        <img class="post-thumbnail-image ui  rounded image" src="{{thumbnailUrl}}" onerror="this.style.display='none';" aria-hidden="true"/>
-      </a>
+        <a class="post-thumbnail-link {{playVideoClass}}" href="{{this.getLink}}" target="{{this.getLinkTarget}}">
+            <img class="post-thumbnail-image ui  rounded image" src="{{thumbnailUrl}}" onerror="this.style.display='none';" aria-hidden="true" />
+        </a>
     </div>
-  {{else}}
-  {{#if image}}
-  <div class="post-thumbnail" aria-hidden="true">
-  <a class="post-thumbnail-link {{playVideoClass}}" href="{{this.getLink}}" target="{{this.getLinkTarget}}">
-        <img class="post-thumbnail-image ui  rounded image" src="{{image}}" onerror="this.style.display='none';" aria-hidden="true"/>
-      </a>
-</div>
+    {{else}} {{#if image}}
+    <div class="post-thumbnail" aria-hidden="true">
+        <a class="post-thumbnail-link {{playVideoClass}}" href="{{this.getLink}}" target="{{this.getLinkTarget}}">
+            <img class="post-thumbnail-image ui  rounded image custom-image" src="{{image}}" onerror="this.style.display='none';" aria-hidden="true" />
+        </a>
+    </div>
     {{else}}
     <div class="post-thumbnail-empty"></div>
-    {{/if}}
-  {{/if}}
-  {{#with media}}
-    {{#if showVideo}}
-        <div class="post-video-lightbox">
-          <a class="post-video-lightbox-hide" href="#">×</a>
-          <div class="post-video-lightbox-inner js-video">
+    {{/if}} {{/if}} {{#with media}} {{#if showVideo}}
+    <div class="post-video-lightbox">
+        <a class="post-video-lightbox-hide" href="#">×</a>
+        <div class="post-video-lightbox-inner js-video">
             {{{html}}}
-          </div>
         </div>
-    {{/if}}
-  {{/with}}
+    </div>
+    {{/if}} {{/with}}
 </template>
