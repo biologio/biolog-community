@@ -1,4 +1,4 @@
-## Invent.healthcare a project for [Biolog](../biolog) community. 
+## Invent.healthcare a project for [Biolog](../biologio/biolog) community. 
 
 ```meteor
 ```
@@ -16,7 +16,7 @@ custom-telescope consist of four root level folder.
 
 ###[server](packages/custom-telescope/server) : A code/asset repository for server side.
 
-###[i18n](packages/custom-telescope/server) : Used for i18n (Internationalization).
+###[i18n](packages/custom-telescope/i18n) : Used for i18n (Internationalization).
 
 
 
