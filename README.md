@@ -13,12 +13,12 @@ This is a package based customized  version of `Telescope`
 
 ## custom-telescope structure
 custom-telescope consist of four root level folder.
-[client](../package/custom-telescope/client) : Used for client side resources such is Templates, Javascript, Styles etc.
-[lib](/package/custom-telescope/lib) : Used for resources to be available on both client and server. e.g collection
+### [client](package/custom-telescope/client) : Used for client side resources such is Templates, Javascript, Styles etc.
+### [lib](package/custom-telescope/lib) : Used for resources to be available on both client and server. e.g collection
 
-[server](/package/custom-telescope/server) : A code/asset repository for server side.
+###[server](package/custom-telescope/server) : A code/asset repository for server side.
 
-[i18n](/package/custom-telescope/server) : Used for i18n (Internationalization).
+###[i18n](package/custom-telescope/server) : Used for i18n (Internationalization).
 
 
 
