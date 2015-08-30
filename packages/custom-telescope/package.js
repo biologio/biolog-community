@@ -1,63 +1,63 @@
 Package.describe({
-  summary: 'Telescope custom package – use for customization to Telescope app',
-  version: '0.1.0',
-  name: 'biolog:custom-telescope'
+    summary: 'Telescope custom package – use for customization to Telescope app',
+    version: '0.1.0',
+    name: 'biolog:custom-telescope'
 });
 
-Package.onUse(function (api) {
-
-  
-  api.use(["telescope:core", "jeremy:telescope-plugin-hero"]);
+Package.onUse(function(api) {
 
 
- 
+    api.use(["telescope:core", "jeremy:telescope-plugin-hero"]);
 
-  // i18n config (must come first)
 
-  api.addFiles([
-    'package-tap.i18n'
-  ], ['client', 'server']);
 
-  // client & server
-api.addFiles(['lib/collection.js'],'server');
-  api.addFiles([
-    'lib/custom_fields.js',
-    'lib/template_modules.js',
-    'lib/callbacks.js'
-  ], ['client', 'server']);
 
-  // client
+    // i18n config (must come first)
 
-  api.addFiles([
-    'client/templates/custom_layout.html',
-    'client/templates/custom_logo.html',
-    'client/templates/custom_header.html',
-    'client/js/custom_header.js',
-    'client/templates/custom_post_thumbnail.html',
-    'client/templates/custom_search.html',
-    'client/templates/categories.html',
-     'client/templates/custom_loading.html',
-     'client/templates/custom_hero.html',
-     'client/templates/custom_footer_code.html',
-      'client/templates/custom_post_share.html',
-    'client/js/categories.js',
-    'client/js/custom_menuComponent.js',
-       'client/js/custom_post_submit.js',
-    'client/stylesheets/scss/screen.scss',
-    'client/stylesheets/custom.scss'
+    api.addFiles([
+        'package-tap.i18n'
+    ], ['client', 'server']);
 
-  ], ['client']);
+    // client & server
+    api.addFiles(['lib/collection.js'], 'server');
+    api.addFiles([
+        'lib/custom_fields.js',
+        'lib/template_modules.js',
+        'lib/callbacks.js'
+    ], ['client', 'server']);
 
-  // server
+    // client
 
-  api.addFiles([
-    'server/templates/custom_emailPostItem.handlebars'
-  ], ['server']);
+    api.addFiles([
+        'client/templates/custom_layout.html',
+        'client/templates/custom_logo.html',
+        'client/templates/custom_header.html',
+        'client/js/custom_header.js',
+        'client/templates/custom_post_thumbnail.html',
+        'client/templates/custom_search.html',
+        'client/templates/categories.html',
+        'client/templates/custom_loading.html',
+        'client/templates/custom_hero.html',
+        'client/templates/custom_footer_code.html',
+        'client/templates/custom_post_share.html',
+        'client/js/categories.js',
+        'client/js/custom_menuComponent.js',
+        'client/js/custom_post_submit.js',
+        'client/stylesheets/scss/screen.scss',
+        'client/stylesheets/custom.scss'
 
-  // i18n languages (must come last)
+    ], ['client']);
 
-  api.addFiles([
-    'i18n/en.i18n.json'
-  ], ['client', 'server']);
+    // server
+
+    api.addFiles([
+        'server/templates/custom_emailPostItem.handlebars'
+    ], ['server']);
+
+    // i18n languages (must come last)
+
+    api.addFiles([
+        'i18n/en.i18n.json'
+    ], ['client', 'server']);
 
 });
