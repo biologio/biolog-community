@@ -11,7 +11,7 @@ This is a package based customized  version of `Telescope`
 
 ## custom-telescope structure
 custom-telescope consist of four root level folder.
-### [client](tree/master/packages/custom-telescope/client) : Used for client side resources such is Templates, Javascript, Styles etc.
+### [client](../tree/master/packages/custom-telescope/client) : Used for client side resources such is Templates, Javascript, Styles etc.
 ### [lib](package/custom-telescope/lib) : Used for resources to be available on both client and server. e.g collection
 
 ###[server](package/custom-telescope/server) : A code/asset repository for server side.
