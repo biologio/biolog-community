@@ -1,4 +1,4 @@
-## Invent.healthcare a project for [Biolog](../biologio/biolog) community. 
+## Invent.healthcare a project for [Biolog](../biolog) community. 
 
 ```meteor
 ```
