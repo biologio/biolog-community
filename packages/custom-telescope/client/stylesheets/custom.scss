@@ -137,6 +137,7 @@ h1, h2, h3, h4, h5{
         transition: all .2s;
         cursor: pointer;
         .post-title {
+
             
         }
     }
@@ -306,6 +307,7 @@ a.post-category:hover {
     border-color: #151414 !important;
     color: #2196F3 !important;
     box-shadow: -3px 0 5px 0px #F1F1F1;
+    display:none;
 }
 
 }
@@ -599,4 +601,13 @@ padding:10px;
 }
 .footer li{
   font-size:.8rem;
+}
+
+input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn-primary, .header .btn-primary, .header .btn-primary:link, .header .btn-primary:visited, .error, .mobile-menu-button, .login-link-text, .post-category:hover {
+    background-color: #2196F3 !important;
+}
+span.menu-items-toggle{
+  i.icon{
+  display:none;
+  }
 }

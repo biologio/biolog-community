@@ -23,7 +23,8 @@ Package.onUse(function(api) {
     api.addFiles([
         'lib/custom_fields.js',
         'lib/template_modules.js',
-        'lib/callbacks.js'
+        'lib/callbacks.js',
+        'lib/posts.js'
     ], ['client', 'server']);
 
     // client

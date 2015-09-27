@@ -5,3 +5,5 @@
 // Telescope.callbacks.add("postSubmitClient", alertThanks);
 Telescope.utils.icons.upvote = "sort-asc";
 Telescope.utils.icons.downvote = "sort-desc";
+
+

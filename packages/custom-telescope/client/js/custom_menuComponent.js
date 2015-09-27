@@ -44,3 +44,39 @@ Template.post_item.events({
 
     }
 })
+
+Template.post_title.helpers({
+    summary: function () {
+       return Telescope.utils.trimWords("this is a test please ignore this i am going to test this functionality", 10)
+    }
+});
+
+Template.post_title.events({
+    'click a.post-title': function (e, tpl) {
+           console.log(e);
+        // Routes to include the hero on
+        var homeRoutes = [
+            'posts_default',
+            'posts_top',
+            'posts_best',
+            'posts_new',
+            'posts_digest',
+            'posts_daily'
+        ];
+
+        // Current route
+        var route = Router.current().route.getName();
+            // Check if we should display the hero on this route
+            for (i in homeRoutes) {
+                if (homeRoutes[i] === route) {
+                    Router.go("/posts/"+this._id+"/"+this.slug)
+                    return false
+                    
+                }
+            }
+        
+
+       
+    }
+   
+});
