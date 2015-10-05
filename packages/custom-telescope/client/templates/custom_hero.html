@@ -11,7 +11,13 @@
     <section class="hero" style="background-image: url('{{heroImage}}')">
         <div class="hero-inner">
             <div class="copy">
-                <h1>{{title}}</h1>
+                <h1>
+                    {{#if showImage}}
+                    <img src="/images/slogan.png" alt="{{title}}">
+                    {{else}}
+                     {{title}}
+                    {{/if}}
+                     </h1>
                 <h3>{{subheading}}</h3> {{{extraHtml}}}
             </div>
         </div>

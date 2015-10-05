@@ -116,7 +116,7 @@ Template.hero.rendered = function(e, tpl) {
     console.log(button);
     if (button) {
         if (Meteor.user()) {
-            console.log('text changed')
+           
             button.text('Add a Post');
 
 
