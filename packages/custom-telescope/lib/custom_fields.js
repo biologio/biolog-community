@@ -8,15 +8,7 @@ Meteor.startup(function() {
             editableBy: ["member", "admin"]
         }
     });
-    Categories.addField({
-        fieldName: 'slogan',
-        fieldSchema: {
-            type: String,
-            optional: true,
-            editableBy: ["member", "admin"]
-
-        }
-    });
+    
 
 
 

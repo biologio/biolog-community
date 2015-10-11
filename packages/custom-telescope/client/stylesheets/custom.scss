@@ -12,6 +12,15 @@ body {
     font-weight: normal;
 }
 
+.categories {
+    background-color: #fff !important;
+    margin-top:10px !important;
+}
+
+.jumbotron .jumbotron-inner {
+    background: transparent;
+}
+
 h1,
 h2,
 h3,
@@ -180,65 +189,6 @@ h5 {
     }
 }
 
-.categories {
-    margin-top: 0px;
-    margin-bottom: 1rem;
-    border-bottom: solid 7px #32CBFD;
-    padding-bottom: 10px;
-}
-
-.categories .ui.cards > .card,
-.categories .ui.card {
-    box-shadow: none;
-}
-
-.categories .ui.cards .card {
-    border-radius: 0;
-}
-
-.categories .ui.cards .card {
-    transition: all .25s;
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.categories .ui.cards > .card:hover {
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.categories .ui.cards .card .image {
-    border-radius: 0 !important;
-}
-
-.categories .ui.cards .card .content .header {
-    padding: 0;
-    box-shadow: none;
-    height: auto !important;
-    margin-bottom: 1rem;
-    font-weight: normal !important;
-    font-size: 1.4rem !important;
-}
-
-.categories .ui.cards a.ui.label {
-    cursor: pointer;
-    font-weight: normal;
-    margin-bottom: 5px;
-}
-
-.categories a.ui.label.blue {
-        background-color: #2EBAE8 !important;
-        border-color: rgba(88, 203, 241, 0.72) !important;
-        &:hover{
-            background-color: #0AB5EC !important;
-            border-color: #07A3D6 !important;
-        }
-}
-
-.categories .ui.cards > .card > .extra,
-.categories .ui.card > .extra .extra {
-    color: #0666B3;
-}
-
 legend {
     padding: 0.2em 0.5em !important;
     border: 1px solid #B5B0B0 !important;
@@ -384,208 +334,6 @@ a.post-category:hover {
     top: 5px;
     font-size: 16px;
     right: -24px;
-}
-
-
-/* Sample styles for HTML above */
-
-.hero {
-    overflow: none;
-    margin-bottom: 0;
-}
-
-.hero .copy .button {
-    background: transparent !important;
-    color: #fff;
-    font-size: 1.8em;
-    font-weight: 300;
-    margin: 1rem auto;
-    border-radius: 0;
-    -webkit-transition: background 1s;
-    transition: background 1s;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    line-height: 1;
-    width: 240px;
-    cursor: pointer;
-    margin: 0 auto;
-    border: 2px solid #fff;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    font-weight: 400;
-    text-align: center;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    letter-spacing: 1px;
-    background: rgba(0, 0, 0, 0);
-    -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-    transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-}
-.hero .copy{
-    top:18%;
-}
-.hero .copy .button:hover {
-    color: #fff;
-}
-
-.hero .learn-more {
-    font-size: 1.5em;
-    font-weight: 300;
-}
-
-.hero-config + .categories {
-    margin-top: 10px;
-}
-
-.categories {
-    margin-top: -40px;
-}
-
-.hero .learn-more a {
-    outline: none;
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.hero .hero-inner {
-    background: rgba(0, 0, 0, 0.1);
-    position: relative;
-    min-height: 350px !important;
-}
-
-.post-vote .downvote-link,
-.post-vote .upvote-link {
-    color: #000;
-}
-
-.hero .copy .button {
-    margin: 1rem auto;
-    background-color:rgba(33, 133, 210, 0.38) !important;
-    border:none;
-    &:hover{
-    background-color:rgba(30, 124, 197, 0.18) !important;
-    color:#fff !important;
-    border:solid 2px #8CD9F3;
-    }
-}
-
-.hide {
-    display: none;
-}
-
-.card .image {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.card .image img {
-    display: block;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.overlay1 {
-    display: block;
-    position: absolute;
-    z-index: 20;
-    background: rgba(50, 180, 226, 0.25);
-    overflow: hidden;
-    transition: all 0.5s;
-}
-
-a.close-overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 45px;
-    text-align: center;
-    background-color: #000;
-    cursor: pointer;
-}
-
-a.close-overlay.hidden {
-    display: none;
-}
-
-a.expand {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    width: 60px;
-    height: 60px;
-    border: solid 3px #fff;
-    text-align: center;
-    color: #fff;
-    line-height: 1;
-    font-weight: normal;
-    font-size: 24px;
-    border-radius: 30px;
-    background: rgb(30, 205, 151);
-    color: #fff;
-}
-
-#effect-1 .overlay1 {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-}
-
-#effect-1 .overlay1 a.expand {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-#effect-1 .image.hover .overlay1 {
-    opacity: 1;
-}
-
-#effect-1 .image.hover .overlay1 a.expand {
-    width: 70%;
-    height: 50px;
-    padding: 10px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    border-radius: 30px;
-    font-weight: normal;
-}
-
-#effect-1 .image.hover .overlay1 a.expand:hover {
-    color: #fff;
-    border-color: rgb(30, 205, 151);
 }
 
 .post-list-title.category-title {

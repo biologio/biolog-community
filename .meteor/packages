@@ -27,7 +27,6 @@ telescope:rss
 telescope:scoring
 telescope:search
 telescope:share
-telescope:singleday
 telescope:subscribe-to-posts
 telescope:tagline-banner
 telescope:tags
@@ -40,7 +39,7 @@ telescope:debug
 ############ Your Custom Packages ############
 
 # custom
-
+service-configuration
 flemay:less-autoprefixer
 semantic:ui
 
@@ -48,7 +47,6 @@ semantic:ui
 
 
 #biolog:custom-landing
-#biolog-telescope:posts
 biolog:custom-telescope
 danappelxx:hover.css
 
@@ -58,6 +56,8 @@ danappelxx:hover.css
 #materialize:materialize
 amr:parsley.js
 
-jeremy:telescope-plugin-hero
 accounts-google
 cwaring:modernizr
+standard-minifiers
+kadira:flow-router
+decent10cs:telescope-jumbotron

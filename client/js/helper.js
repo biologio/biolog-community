@@ -24,11 +24,11 @@ else{
 
     return arr; 
 }
-Router.route("/poll", {
-  name: 'poll',
-  template:'poll',
-  layoutTemplate: 'pollLayout'
-})
+// Router.route("/poll", {
+//   name: 'poll',
+//   template:'poll',
+//   layoutTemplate: 'pollLayout'
+// })
 
 
 

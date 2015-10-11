@@ -1,3 +1,4 @@
 mup.json
 settings.json
 /dump/*
+server/config/social-config.js

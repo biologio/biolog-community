@@ -5,8 +5,9 @@ Telescope.modules.add("secondaryNav", {
     order: 1
 });
 
-Telescope.modules.add("hero", {
-    template: "biologCategories",
-    order: 2
-});
+// Telescope.modules.add("hero", {
+//     template: "biologCategories",
+//     order: 2,
+//     only: ['postsDefault']
+// });
 //Telescope.modules.remove("top","posts_views_nav");

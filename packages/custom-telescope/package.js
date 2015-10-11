@@ -7,7 +7,7 @@ Package.describe({
 Package.onUse(function(api) {
 
 
-    api.use(["telescope:core", "jeremy:telescope-plugin-hero"]);
+    api.use(["telescope:core"]);
 
 
 
@@ -19,7 +19,7 @@ Package.onUse(function(api) {
     ], ['client', 'server']);
 
     // client & server
-    api.addFiles(['lib/collection.js'], 'server');
+
     api.addFiles([
         'lib/custom_fields.js',
         'lib/template_modules.js',
@@ -33,18 +33,12 @@ Package.onUse(function(api) {
         'client/templates/custom_layout.html',
         'client/templates/custom_logo.html',
         'client/templates/custom_header.html',
-        'client/js/custom_header.js',
         'client/templates/custom_post_thumbnail.html',
         'client/templates/custom_search.html',
-        'client/templates/categories.html',
         'client/templates/custom_loading.html',
-        'client/js/hero.js',
-        'client/templates/custom_hero.html',
         'client/templates/custom_footer_code.html',
         'client/templates/custom_post_share.html',
-        'client/js/categories.js',
         'client/js/custom_menuComponent.js',
-        'client/js/custom_post_submit.js',
         'client/stylesheets/scss/screen.scss',
         'client/stylesheets/custom.scss'
 
@@ -53,7 +47,9 @@ Package.onUse(function(api) {
     // server
 
     api.addFiles([
-        'server/templates/custom_emailPostItem.handlebars'
+        'server/templates/custom_emailWrapper.handlebars',
+        'server/templates/custom_emailPostItem.handlebars',
+        'lib/email_template.js'
     ], ['server']);
 
     // i18n languages (must come last)
