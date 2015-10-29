@@ -1,13 +1,13 @@
 {
-  "name": "Biolog",
-  "description": "An open-source community app built with Meteor",
-  "repository": "https://github.com/TelescopeJS/sample-project/",
-  "logo": "http://www.telescopeapp.org/images/logo.png",
-  "keywords": ["meteor", "social", "community"],
+  "name": "invent.healthcare",
+  "description": "community of health care innovators, featuring products, ideas, and stories related to quantified self, democratized medicine, and m-health",
+  "repository": "https://github.com/biologio/biolog-community",
+  "logo": "http://invent.healthcare/images/logo.png",
+  "keywords": ["health", "healthcare", "technology", "community"],
   "env": {
     "BUILDPACK_URL": "https://github.com/AdmitHub/meteor-buildpack-horse.git",
     "ROOT_URL": {
-      "description": "The full URL of your Telescope app (by default, http://appname.herokuapp.com)."
+      "description": "http://invent.healthcare"
     }
   },
   "addons": [
