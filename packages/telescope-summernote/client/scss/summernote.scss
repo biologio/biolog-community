@@ -1,0 +1,92 @@
+.clear {
+    clear: both;
+}
+
+#submitPostForm .form-group label.control-label,
+#editPostForm .form-group label.control-label,
+.categories-list .form-group label.control-label,
+.admin-contents .form-group label.control-label {
+    margin-left: 200px;
+    text-align: left;
+}
+
+.admin-contents.adminPages-contents .form-group label.control-label {
+    margin-left: 00px;
+}
+
+.btn-primary {
+    border: none;
+    &:hover {
+        color: #fff;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.note-toolbar {
+    .btn.btn-default {
+        float: none
+    }
+}
+.note-editable  {
+resize: vertical;
+ul,ol{
+    margin-left:1rem;
+    padding: 0 2rem;
+}
+ul{
+
+    list-style: inherit !important;
+    list-style-type: disc;
+    }
+    ol{
+    list-style: inherit !important;
+    list-style-type: decimal !important;
+    }
+    img.img-thumbnail{
+    &:after{
+    display:block;
+    content: 'Red me';
+    padding:2rem;
+    background:red;
+    clear:both;
+    }
+    }
+}
+
+.note-color-row {
+    input[type="submit"],
+    button,
+    .button,
+    .btn {
+        display: inline
+    }
+}
+
+.reactive-table-options {
+    .input-group-addon {
+        padding: 0 12px;
+    }
+    .reactive-table-filter input {
+        margin-left: 0;
+    }
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn.btn-default.btn-sm.note-recent-color {
+    float: left;
+}
+.has-shadow, .single-post .posts .post, .post-body, .page-body {
+    box-shadow: none;
+}
+.grid-block, .comment-content, .comment-new {
+
+    box-shadow: none;
+}

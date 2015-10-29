@@ -1,11 +1,11 @@
 Meteor.publish("polls", function(call){
-	console.log(call);
+	
 	 return Polls.find({});
 })
 
 // run this when the meteor app is started
 Meteor.startup(function() {
-console.log("count", Polls.find().count())
+
   // if there are no polls available create sample data
   if (Polls.find().count() === 0) {
 

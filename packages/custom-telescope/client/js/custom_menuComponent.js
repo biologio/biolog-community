@@ -34,7 +34,4 @@ Template.post_item.events({
 
     }
 })
-Template.post_submit.rendered = function() {
-    console.log(this);
 
-};

@@ -6,8 +6,9 @@ Package.describe({
 
 Package.onUse(function(api) {
 
-
-    api.use(["telescope:core"]);
+ api.versionsFrom('1.2.0.2');
+  api.use('ecmascript');
+    api.use(["telescope:core","fourseven:scss"]);
 
 
 

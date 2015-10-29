@@ -40,15 +40,14 @@ telescope:debug
 
 # custom
 service-configuration
-flemay:less-autoprefixer
-semantic:ui
+#flemay:less-autoprefixer
+#semantic:ui
 
 
 
 
 #biolog:custom-landing
 biolog:custom-telescope
-danappelxx:hover.css
 
 
 
@@ -58,6 +57,7 @@ amr:parsley.js
 
 accounts-google
 cwaring:modernizr
-standard-minifiers
 kadira:flow-router
 decent10cs:telescope-jumbotron
+biolog:telescope-summernote
+seba:minifiers-autoprefixer
