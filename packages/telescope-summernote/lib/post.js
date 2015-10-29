@@ -17,6 +17,7 @@ Posts.schema = new SimpleSchema({
     }
   }
 
+
  
  
 
@@ -30,7 +31,7 @@ Posts.schema = new SimpleSchema({
 Posts.attachSchema(Posts.schema);
 
 var eventPhotosStore = new FS.Store.FileSystem('images', {
-  path: '~/codebase/biolog-community/public/uploads1'
+  path: '~/codebase/biolog-community/public/uploads'
 });
 
 
