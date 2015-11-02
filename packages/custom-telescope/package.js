@@ -48,8 +48,8 @@ Package.onUse(function(api) {
     // server
 
     api.addFiles([
-        'server/templates/custom_emailWrapper.handlebars',
-        'server/templates/custom_emailPostItem.handlebars',
+         'server/templates/custom_emailWrapper.handlebars',
+        // 'server/templates/custom_emailPostItem.handlebars',
         'lib/email_template.js'
     ], ['server']);
 
