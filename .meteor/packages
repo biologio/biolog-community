@@ -49,12 +49,14 @@ telescope:update-prompt
 service-configuration
 #flemay:less-autoprefixer
 #semantic:ui
+semantic:ui-icon
+pagebakers:ionicons
 
 
 
 
 #biolog:custom-landing
-biolog:custom-telescope
+
 
 
 
@@ -68,3 +70,5 @@ kadira:flow-router
 decent10cs:telescope-jumbotron
 seba:minifiers-autoprefixer
 biolog:telescope-summernote
+biolog:custom-telescope
+meteorhacks:kadira

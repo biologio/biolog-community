@@ -11,3 +11,8 @@ Telescope.modules.add("secondaryNav", {
 //     only: ['postsDefault']
 // });
 //Telescope.modules.remove("top","posts_views_nav");
+//  Telescope.modules.remove("postsListTop", "views_menu");
+// Telescope.modules.add("hero", {
+//   template: "views_menu",
+//   order: -1
+// });

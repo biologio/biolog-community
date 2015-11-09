@@ -24,9 +24,9 @@ Template.post_item.events({
 
                 link = tpl.find('a.post-title');
                 var text = Telescope.utils.slugify(link.text);
-                $(link).attr('href', null);
-                $(link).attr('target', '');
-                location.assign('/posts/' + this.wrapperId);
+                //$(link).attr('href', null);
+               // $(link).attr('target', '');
+                if(this.moduleData && this.moduleData._id) location.assign('/posts/' + this.moduleData._id);
             } else {
                 return true
             }
@@ -34,4 +34,28 @@ Template.post_item.events({
 
     }
 })
+
+Template.categories.helpers({
+  
+    showPostCount: function(post) {
+        if (post <= 1) {
+            return '<div class="value"> ' + post + '  </div>  <div class="label">Post</div>'
+        } else {
+            return '<div class="value"> ' + post + '  </div>  <div class="label">Posts</div>'
+        }
+    }
+});
+Template.jumbotron.rendered = function() {
+
+ Meteor.setTimeout(function(){
+   $('.sidebar-toggle').on('click', function() {
+        $('.sidebar-jumbotron-settings')
+            .sidebar('setting', 'transition', 'scale down').sidebar('toggle');
+        
+console.log("jumbotron")
+    })
+
+ }, 2000)
+};
+
 

@@ -9,7 +9,15 @@ Meteor.startup(function() {
         }
     });
     
+ Categories.addField({
+        fieldName: 'categoryIcon',
+        fieldSchema: {
+            type: String,
+            optional: true,
+            editableBy: ["member", "admin"]
 
+        }
+    });
 
 
 

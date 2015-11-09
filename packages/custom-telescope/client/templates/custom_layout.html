@@ -1,40 +1,29 @@
 <template name="custom_layout">
-  {{#if appIsReady}}
-    {{> css}}
+    {{#if appIsReady}} {{> css}}
     <div class="outer-wrapper {{currentPage}} {{navLayout}}">
-      {{> mobile_nav}}
-      <div class="inner-wrapper template-{{pageName}}">
-        {{> header}}
-        {{> modules zone="hero"}}
-        <div class="content-wrapper">
-          {{> messages}}
-          {{#if notAllowed}}
-            {{> Template.dynamic template=notAllowed.template data=notAllowed.data}}
-          {{else}}
-            {{> Template.dynamic template=adminMenu}}
-            {{> modules zone="top"}}
-            {{> Template.dynamic template=main}}
-          {{/if}}
-         
+        {{> mobile_nav}}
+        <div class="inner-wrapper template-{{pageName}}">
+            {{> header}} {{> modules zone="hero"}}
+            <div class="content-wrapper">
+                {{> messages}} {{#if notAllowed}} {{> Template.dynamic template=notAllowed.template data=notAllowed.data}} {{else}} {{> Template.dynamic template=adminMenu}} {{> modules zone="top"}} {{> Template.dynamic template=main}} {{/if}}
+            </div>
+            {{> modules zone="footer"}}
+            <div class="overlay hidden"></div>
         </div>
-         {{> modules zone="footer"}}
-        <div class="overlay hidden"></div>
-      </div>
-      {{{extraCode}}}
+        {{{extraCode}}}
     </div>
-  {{else}}
+    {{else}}
     <div class="app-loading">{{> loading}}</div>
-  {{/if}}
+    {{/if}}
 </template>
-
 <template name="custom_jumbotron">
+    {{#if Template.subscriptionsReady}}
     <div class="telescope-jumbotron-container">
         {{#if showJumbotron}} {{#with jumbotronData}}
         <style type="text/css">
-       {{extraCss}}
+        {{extraCss}}
         </style>
-      {{#if currentUser}}
-      {{else}}
+        {{#if currentUser}} {{else}}
         <section class="telescope-jumbotron" style="background-image: url('{{image}}')">
             <div class="telescope-jumbotron-inner">
                 <div class="copy">
@@ -46,14 +35,104 @@
                     {{/if}}
                 </h1>
                     <h3>{{subheading}}</h3> {{{extraHtml}}}
-
                 </div>
             </div>
         </section>
-      {{/if}}
-        {{>categories}} {{/with}} {{/if}} {{#if isAdmin}}
+        {{/if}} {{>categories}} {{/with}} {{/if}} {{#if isAdmin}}
         <span class="fa fa-chevron-left  sidebar-toggle"></span> {{/if}}
     </div>
+    {{else}}
+    {{> loading}}
+    {{/if}}
 </template>
+<template name="custom_categories">
+    <div class="categories" id="cardList">
+    <!--     <div class="ui link four doubling stackable cards " id="cardList">
+            {{#each categoriesList}}
+            <div class="card">
+                {{#if image}}
+                <div class="image">
+                    <img src="{{image}}">
+                    <div class="overlay-image">
+                        <a href="/submit" class="expand">  {{#if tagline}}
+                        {{tagline}}
+                        {{else}}
+                        Post {{name}}
+                        {{/if}}
+                        </a>
+                        <a class="close-overlay hidden">x</a>
+                    </div>
+                </div>
+                {{/if}}
+                <div class="content">
+                    <a href="/?cat={{slug}}" class="header category">{{name}}</a>
+                    <div class="meta">
+                        {{#each subCategories}}
+                        <a href="/?cat={{slug}}" class="ui mini blue label">{{name}}</a> {{/each}}
+                    </div>
+                    <div class="description">
+                        {{description}}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <span class="right floated">
+        Joined in 2013
+      </span>
+                    <span>
+        {{{showPostCount post}}}
+      </span>
+                </div>
+            </div>
+            {{/each}}
+        </div> -->
+        <div class="ui special three cards  stackable cards "  >
+              {{#each categoriesList}}
+  <div class="card">
+    
+     
+     
+  <div class="image">
+      <img src="{{image}}">
+  <div class="overlay-image">
+                        <a href="/submit" class="expand ui button massive">  {{#if tagline}}
+                        {{tagline}}
+                        {{else}}
+                        Post {{name}}
+                        {{/if}}
+                        </a>
+                        <a class="close-overlay hidden">x</a>
+                    </div>
+
+  </div>
+   <a class="heading" href="/?cat={{slug}}">{{#if categoryIcon}}
+      <i class=" {{categoryIcon}}"></i>
+      {{/if}} {{name}}</a>
+    <div class="blurring dimmable image " id = "categoryList">
+    
+     
+      <div class="content">
+    
+      <div class="meta">
+                        {{#each subCategories}}
+                        <a href="/?cat={{slug}}" class="ui mini blue label">{{name}}</a> {{/each}}
+                    </div>
+                    <div class="description">
+                        {{description}}
+                    </div>
+                    <div class="ui orange mini floated right statistic">
+  {{{showPostCount post}}}
+  </div>
+                  
+    </div>
+    </div>
+
+       
+  </div>
+  {{/each}}
+  
+</div>
+    </div>
+</template>
+
 
 
