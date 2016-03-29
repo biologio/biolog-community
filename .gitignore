@@ -3,3 +3,5 @@ settings.json
 /dump/*
 server/config/social-config.js
 .idea/*
+ssl.pem
+invent.healthcare.key

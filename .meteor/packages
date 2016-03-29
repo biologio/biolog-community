@@ -72,3 +72,4 @@ seba:minifiers-autoprefixer
 biolog:telescope-summernote
 biolog:custom-telescope
 meteorhacks:kadira
+#force-ssl
